@@ -1,0 +1,81 @@
+/* body{
+    background-color: #ECFFDC;
+} */
+.container {
+  width: 210px;
+  height: 140px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-perspective: 1100px;
+  perspective: 1100px;
+}
+
+#carousel {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+  animation: rotating 20s linear infinite;
+}
+#carousel:hover {
+  animation-play-state: paused;
+  -o-animation-play-state: paused;
+  -moz-animation-play-state: paused;
+  -webkit-animation-play-state: paused;
+}
+#carousel div {
+  display: block;
+  position: absolute;
+  width: 180px;
+  height: 120px;
+  border: 2px solid #000;
+}
+#carousel div img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     /* object-fit: cover; */
+}
+#carousel div:nth-child(1) {
+  transform: rotateY(0deg) translateZ(288px);
+}
+#carousel div:nth-child(2) {
+  transform: rotateY(40deg) translateZ(288px);
+}
+#carousel div:nth-child(3) {
+  transform: rotateY(80deg) translateZ(288px);
+}
+#carousel div:nth-child(4) {
+  transform: rotateY(120deg) translateZ(288px);
+}
+#carousel div:nth-child(5) {
+  transform: rotateY(160deg) translateZ(288px);
+}
+#carousel div:nth-child(6) {
+  transform: rotateY(200deg) translateZ(288px);
+}
+#carousel div:nth-child(7) {
+  transform: rotateY(240deg) translateZ(288px);
+}
+#carousel div:nth-child(8) {
+  transform: rotateY(280deg) translateZ(288px);
+}
+#carousel div:nth-child(9) {
+  transform: rotateY(320deg) translateZ(288px);
+}
+@keyframes rotating {
+  from {
+    transform-origin: 60% 50%;
+    transform: rotateY(0deg);
+  }
+  to {
+    transform-origin: 60% 50%;
+    transform: rotateY(-360deg);
+  }
+}/*# sourceMappingURL=graphics.css.map */
+.logo{
+    width: 100px;
+}

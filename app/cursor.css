@@ -1,0 +1,13 @@
+.custom-cursor {
+    cursor: url('../public/cursor.png'), auto;
+  };
+
+  *{
+    cursor: url('../public/cursor.png'), auto;
+  };
+
+  html,
+  body,
+  :root {
+    cursor: url('../public/cursor.png'), auto;
+  };

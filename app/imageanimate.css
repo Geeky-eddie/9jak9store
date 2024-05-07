@@ -1,0 +1,12 @@
+
+.image-card {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 2s, transform 2s;
+  }
+  
+  .animate-slide-in {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
