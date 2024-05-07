@@ -1,5 +1,5 @@
 import React from 'react';
-import { AddCircleOutline } from '@mui/icons-material';
+// import { AddCircleOutline } from '@mui/icons-material';
 
 interface PictureGridProps {
   images: string[];
@@ -23,7 +23,7 @@ const Carousel: React.FC<PictureGridProps> = ({ images }) => {
             />
             <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black bg-opacity-50 cursor-pointer">
               <p className="text-white font-bold text-heading4-bold flex items-center">
-                <AddCircleOutline className="mr-2" />
+                {/* <AddCircleOutline className="mr-2" /> */}
                 Book a session
               </p>
             </div>
