@@ -10,7 +10,9 @@
   },
   "dependencies": {
     "@clerk/nextjs": "^4.29.7",
-    "@mui/icons-material": "^5.15.14",
+    "@mui/icons-material": "^5.15.16",
+    "@mui/material": "^5.15.16",
+    "@mui/system": "^5.15.15",
     "@storybook/react": "^8.0.8",
     "@stripe/stripe-js": "^3.0.6",
     "@types/react-slick": "^0.23.13",
