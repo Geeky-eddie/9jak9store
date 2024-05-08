@@ -23,7 +23,7 @@ const FooterCom: React.FC = () => {
                 <Footer.Link className='m-3' href='https://traversefaultlessashamed.com/tvsqgu7h?key=77210600284472feec81b21a019d83dd' target='_blank' rel='noopener noreferrer'>
                   Learn more about 9jak9
                 </Footer.Link>
-                <Footer.Link className='m-3' href='https://www.w3schools.com/' target='_blank' rel='noopener noreferrer'>
+                <Footer.Link className='m-3' href='#' target='_blank' rel='noopener noreferrer'>
                   Meet our Dogs
                 </Footer.Link>
               </Footer.LinkGroup>
@@ -31,13 +31,13 @@ const FooterCom: React.FC = () => {
             <div>
               <Footer.Title className='m-3' title='Contact us' />
               <Footer.LinkGroup col>
-                <Footer.Link className='m-3' href='https://chat.whatsapp.com/B6dzarAw0zC1LS3hNS0qxQ' target='_blank' rel='noopener noreferrer'>
+                <Footer.Link className='m-3' href='#' target='_blank' rel='noopener noreferrer'>
                   Join our Community
                 </Footer.Link>
-                <Footer.Link className='m-3' href='https://twitter.com/Geekyeddie' target='_blank' rel='noopener noreferrer'>
+                <Footer.Link className='m-3' href='#' target='_blank' rel='noopener noreferrer'>
                   Contact us on Twitter
                 </Footer.Link>
-                <Footer.Link className='m-3' href='https://www.instagram.com/geekyeddietech/' target='_blank' rel='noopener noreferrer'>
+                <Footer.Link className='m-3' href='#' target='_blank' rel='noopener noreferrer'>
                   Contact us on Instagram
                 </Footer.Link>
               </Footer.LinkGroup>
@@ -46,7 +46,7 @@ const FooterCom: React.FC = () => {
               <Footer.Title className='m-3' title='Legal' />
               <Footer.LinkGroup col>
                 <div className='m-3'>
-                  <Link href="/privacy-policy" rel='noopener noreferrer' passHref>
+                  <Link href="/privacypolicy" rel='noopener noreferrer' passHref>
                     
                       Privacy Policy
                 
@@ -59,13 +59,13 @@ const FooterCom: React.FC = () => {
                     
                   </Link>
                 </div>
-                <div className='m-3'>
+                {/* <div className='m-3'>
                   <Link href="/disclaimer" rel='noopener noreferrer' passHref>
                    
                       Check out our Disclaimer
                    
                   </Link>
-                </div>
+                </div> */}
               </Footer.LinkGroup>
             </div>
           </div>
@@ -75,11 +75,11 @@ const FooterCom: React.FC = () => {
           <Footer.Copyright href='#' by=' - 9jak9' year={new Date().getFullYear()} />
         </div>
         <div className="flex gap-6 sm:mt-0 mt-4 sm:justify-center">
-          <Footer.Icon href='https://facebook.com' icon={BsFacebook} target='_blank' />
-          <Footer.Icon href='https://twitter.com/Geekyeddie' icon={BsTwitter} target='_blank' />
-          <Footer.Icon href='https://www.instagram.com/geekyeddietech/' icon={BsInstagram} target='_blank' />
-          <Footer.Icon href='https://chat.whatsapp.com/B6dzarAw0zC1LS3hNS0qxQ' icon={BsWhatsapp} target='_blank' />
-          <Footer.Icon href='https://www.tiktok.com/@geekyeddietech?lang=en' icon={BsTiktok} target='_blank' />
+          <Footer.Icon href='#' icon={BsFacebook} target='_blank' />
+          <Footer.Icon href='#' icon={BsTwitter} target='_blank' />
+          <Footer.Icon href='#' icon={BsInstagram} target='_blank' />
+          <Footer.Icon href='#' icon={BsWhatsapp} target='_blank' />
+          <Footer.Icon href='#' icon={BsTiktok} target='_blank' />
         </div>
       </div>
     </Footer>
