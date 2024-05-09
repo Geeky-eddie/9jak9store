@@ -1,4 +1,4 @@
-import React from 'react';
+// import React from 'react';
 import styles from '../app/Graphics.module.css';
 import "../app/graphics.css";
 import Image  from 'next/image';
@@ -6,7 +6,7 @@ import pic1 from "../app/pic1.webp";
 
 const Graphics = () => {
   return (
-    <main>
+    <main className=' overflow-x-hidden'>
 
    
 

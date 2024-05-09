@@ -49,7 +49,7 @@ const Carousel: React.FC<PictureGridProps> = ({ imagess }) => {
                   className="object-cover w-full h-full"
                 />
                 <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black bg-opacity-50 cursor-pointer">
-                  {/* <p className="text-white font-bold text-heading4-bold flex items-center">View more<ArrowForwardIcon className="mr-2" /></p> */}
+                  <p className="text-white font-bold text-heading4-bold flex items-center">View more</p>
                 </div>
               </div>
             </div>

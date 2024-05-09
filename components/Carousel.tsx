@@ -1,6 +1,7 @@
 import React from 'react';
 // import { AddCircleOutline } from '@mui/icons-material';
 
+
 interface PictureGridProps {
   images: string[];
 }

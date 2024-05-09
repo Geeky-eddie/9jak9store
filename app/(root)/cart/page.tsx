@@ -177,10 +177,13 @@ const Cart = () => {
           <span>Total Amount</span>
           <span> ₦{totalRounded}</span>
         </div>
-
-        <button className="border rounded-lg text-body-bold bg-black py-3 w-full hover:bg-red-800 hover:text-white" onClick={handleCheckout}>
+            <Link href={"/paymentunavailable"}>
+            <button className="border rounded-lg text-body-bold bg-black py-3 w-full hover:bg-red-800 hover:text-white" > 
+        {/* onClick={handleCheckout} */}
           Proceed to Checkout
         </button>
+            </Link>
+        
 
         {showPaystack && 
         <div id="paymentForm" className="flex flex-col my-4">

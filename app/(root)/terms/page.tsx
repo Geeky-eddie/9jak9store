@@ -3,7 +3,7 @@ import Link from "next/link";
 const Terms: React.FC = () => {
   return (
     <div className="container mx-auto py-12 px-4">
-      <div className="max-w-3xl mx-auto text-center">
+      <div className="max-w-3xl mx-auto text-left">
       <div className="terms-and-conditions-container max-w-2xl mx-auto px-4 py-8">
        
       <h1 className="text-3xl font-bold mb-4">Terms and Conditions</h1>
