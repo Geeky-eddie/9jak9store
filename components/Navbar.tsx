@@ -18,9 +18,13 @@ const Navbar = () => {
   const [dropdownMenu, setDropdownMenu] = useState(false);
   const [query, setQuery] = useState("");
 
+  const closeMenu = () => {
+    setDropdownMenu(false);
+  };
+
   return (
     <div className="sticky top-0 z-10 py-2 px-10 flex gap-2 justify-between items-center bg-red-800 max-sm:px-2">
-      <Link href="/">
+      <Link href="/" >
         <Image src="/logo9ja.svg" alt="logo" width={60} height={40} />
       </Link>
 
@@ -30,6 +34,7 @@ const Navbar = () => {
           className={`hover:text-white ${
             pathname === "/" && "text-white"
           }`}
+          
         >
           Home
         </Link>
@@ -98,37 +103,42 @@ const Navbar = () => {
         />
 
         {dropdownMenu && (
-          <div className="absolute top-12 right-5 flex flex-col gap-4 p-3 rounded-lg border bg-white text-base-bold lg:hidden">
-            <Link href="/" className="hover:text-red-1">
+          <div className="absolute top-12 right-5 flex flex-col gap-4 p-3 rounded-lg border bg-white text-base-bold lg:hidden w-60">
+            <Link href="/" className="hover:text-red-1" onClick={closeMenu}>
               Home
             </Link>
             <Link
               href={ "/programs"}
               className="hover:text-red-1"
+              onClick={closeMenu}
             >
             Our Programs
             </Link>
             <Link
               href={user ? "/shop" : "/sign-in"}
               className="hover:text-red-1"
+              onClick={closeMenu}
             >
             Shop
             </Link>
             <Link
               href={"/ourdogs"}
               className="hover:text-red-1"
+              onClick={closeMenu}
             >
             Our Dogs
             </Link>
             <Link
               href={"/aboutus"}
               className="hover:text-red-1"
+              onClick={closeMenu}
             >
              About us
             </Link>
             <Link
               href="/cart"
               className="flex items-center gap-3 border rounded-lg px-2 py-1 hover:bg-black hover:text-white"
+              onClick={closeMenu}
             >
               <ShoppingCart />
               <p className="text-base-bold">Cart ({cart.cartItems.length})</p>
