@@ -1,7 +1,40 @@
+"use client"
+
 import Link from "next/link";
+import { useEffect, useState } from "react";
+import PreloadAnimation from "../../../components/PreloadAnimation";
+import "../../preloader.css";
+
 
 const Privacypolicy: React.FC = () => {
+  const [isPreloading, setIsPreloading] = useState(true);
+
+  
+  useEffect(() => {
+    setTimeout(() => {
+      setIsPreloading(false);
+    }, 4000);
+
+    const reloadKey = "reloadFlag6";
+    const hasReloaded = localStorage.getItem(reloadKey);
+
+    // Check if the page has already been reloaded
+    if (!hasReloaded) {
+      // Reload the page once after 4 seconds (4000 milliseconds)
+      const timeout = setTimeout(() => {
+        localStorage.setItem(reloadKey, "true"); // Set flag in local storage
+        window.location.reload();
+      }, 4000);
+
+      // Clear the timeout to prevent the reload after the first time
+      return () => clearTimeout(timeout);
+    }
+  }, []);
   return (
+    <>
+    {isPreloading ? (
+      <PreloadAnimation />
+    ) : (
     <div className="container mx-auto py-12 px-4">
       <div className="max-w-3xl mx-auto text-left">
       <div className="privacy-policy-container max-w-2xl mx-auto px-4 py-8">
@@ -61,6 +94,8 @@ const Privacypolicy: React.FC = () => {
     </div>
       </div>
     </div>
+     )}
+     </>
   );
 };
 

@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 // import { AddCircleOutline } from '@mui/icons-material';
 
@@ -23,10 +24,13 @@ const Carousel: React.FC<PictureGridProps> = ({ images }) => {
               className="object-cover w-full h-full transition-transform transform scale-100 group-hover:scale-105 cursor-pointer rounded-lg"
             />
             <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black bg-opacity-50 cursor-pointer">
+              <Link href='https://forms.gle/TrMrHCKzWhYj4qEH9'>
               <p className="text-white font-bold text-heading4-bold flex items-center">
                 {/* <AddCircleOutline className="mr-2" /> */}
                 Book a session
               </p>
+              </Link>
+              
             </div>
           </div>
         </div>

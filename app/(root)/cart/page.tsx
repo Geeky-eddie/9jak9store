@@ -9,6 +9,8 @@ import { useRouter } from 'next/navigation';
 import { FormEventHandler, useEffect, useState } from "react";
 import { PaystackButton } from "react-paystack";
 import { PaystackProps } from "react-paystack/dist/types";
+import PreloadAnimation from "../../../components/PreloadAnimation";
+import "../../preloader.css";
 
 const Cart = () => {
   const router = useRouter();
@@ -112,7 +114,35 @@ const Cart = () => {
     setshowPaystack(true);
   }
 
+  const [isPreloading, setIsPreloading] = useState(true);
+
+ 
+  useEffect(() => {
+    setTimeout(() => {
+      setIsPreloading(false);
+    }, 4000);
+
+    const reloadKey = "reloadFlag4";
+    const hasReloaded = localStorage.getItem(reloadKey);
+
+    // Check if the page has already been reloaded
+    if (!hasReloaded) {
+      // Reload the page once after 4 seconds (4000 milliseconds)
+      const timeout = setTimeout(() => {
+        localStorage.setItem(reloadKey, "true"); // Set flag in local storage
+        window.location.reload();
+      }, 4000);
+
+      // Clear the timeout to prevent the reload after the first time
+      return () => clearTimeout(timeout);
+    }
+  }, []);
+
   return (
+    <>
+    {isPreloading ? (
+      <PreloadAnimation />
+    ) : (
     <div className="flex gap-20 py-16 px-10 max-lg:flex-col max-sm:px-3">
       <div className="w-2/3 max-lg:w-full">
         <p className="text-heading3-bold">Shopping Cart</p>
@@ -255,6 +285,8 @@ const Cart = () => {
         </button>
       </div>
     </div>
+     )}
+     </>
   );
 };
 

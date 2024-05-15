@@ -96,6 +96,10 @@ const config: Config = {
         "blue-3": "#0c0d0d",
         "red-1": "#FF0000",
       },
+      fontSize: {
+        // Define text-5xl font size
+        '5xl': '3rem', // Customize this value as needed
+      },
     },
   },
   plugins: [require("tailwind-scrollbar-hide")],
