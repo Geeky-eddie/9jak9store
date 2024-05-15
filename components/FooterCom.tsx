@@ -23,7 +23,7 @@ const FooterCom: React.FC = () => {
                 <Footer.Link className='m-3' href='https://traversefaultlessashamed.com/tvsqgu7h?key=77210600284472feec81b21a019d83dd' target='_blank' rel='noopener noreferrer'>
                   Learn more about 9jak9
                 </Footer.Link>
-                <Footer.Link className='m-3' href='#' target='_blank' rel='noopener noreferrer'>
+                <Footer.Link className='m-3' href='/ourdogs' target='_blank' rel='noopener noreferrer'>
                   Meet our Dogs
                 </Footer.Link>
               </Footer.LinkGroup>
